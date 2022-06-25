@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<typesystem package="pyside6_qtads">
+    <load-typesystem name="typesystem_widgets.xml" generate="no"/>
+    <namespace-type name="ads">
+        <enum-type name="DockWidgetArea"/>
+        <enum-type name="eBitwiseOperator"/>
+        <enum-type name="eDragState"/>
+        <enum-type name="eIcon"/>
+        <enum-type name="TitleBarButton"/>
+        <object-type name="CDockAreaWidget">
+            <enum-type name="eDockAreaFlag"/>
+        </object-type>
+        <object-type name="CDockManager">
+            <enum-type name="eConfigFlag"/>
+            <enum-type name="eViewMenuInsertionOrder"/>
+        </object-type>
+        <object-type name="CDockWidget">
+            <enum-type name="DockWidgetFeature"/>
+            <enum-type name="eInsertMode"/>
+            <enum-type name="eMinimumSizeHintMode"/>
+            <enum-type name="eState"/>
+            <enum-type name="eToggleViewActionMode"/>
+        </object-type>
+        <object-type name="CDockOverlay">
+            <enum-type name="eMode"/>
+        </object-type>
+        <object-type name="CDockOverlayCross">
+            <enum-type name="eIconColor"/>
+        </object-type>
+        <object-type name="CDockAreaTabBar"/>
+        <object-type name="CDockAreaTitleBar"/>
+        <object-type name="CDockComponentsFactory"/>
+        <object-type name="CDockContainerWidget"/>
+        <object-type name="CDockFocusController"/>
+        <object-type name="CDockSplitter"/>
+        <object-type name="CDockWidgetTab"/>
+        <object-type name="CDockingStateReader"/>
+        <object-type name="CElidingLabel"/>
+        <object-type name="CFloatingDockContainer"/>
+        <object-type name="CFloatingDragPreview"/>
+        <object-type name="CIconProvider"/>
+        <object-type name="CSpacerWidget"/>
+        <object-type name="CTitleBarButton"/>
+        <object-type name="IFloatingWidget"/>
+    </namespace-type>
+</typesystem>
