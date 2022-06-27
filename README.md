@@ -14,5 +14,13 @@ pip install --index-url=http://download.qt.io/official_releases/QtForPython/ --t
 This module is then build like so:
 
 ```sh
-python setup.py bdist_wheel build_ext
+python setup.py {bdist_wheel|install} build_ext -D"CMAKE_PREFIX_PATH:PATH=/path/to/Qt/6.x.x/..."
 ```
+
+or
+
+```sh
+pip {wheel|install} --global-option="build_ext" --global-option="-DCMAKE_PREFIX_PATH:PATH=/path/to/Qt/6.x.x/..." .
+```
+
+Any CMake flags needed to compile the Qt extension will need to be provided. This is likely at least CMAKE_PREFIX_PATH, as shown above.

@@ -6,8 +6,6 @@ from pathlib import Path
 import cmake_build_extension
 import setuptools
 
-qt_prefix_path = "/Users/siege/Qt/6.2.4/macos"
-
 init_py = Path("init.py").read_text()
 
 # Importing the bindings inside the build_extension_env context manager is necessary only
@@ -46,7 +44,6 @@ setuptools.setup(
             source_dir=str(Path(__file__).parent.absolute()),
             cmake_configure_options=[
                 "-DBUILD_EXAMPLES:BOOL=OFF",
-                f"-DCMAKE_PREFIX_PATH:PATH={qt_prefix_path}",
                 f"-DPython3_ROOT_DIR={Path(sys.prefix)}",
             ]
             + CIBW_CMAKE_OPTIONS,
